@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restworld Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <h1>Restworld</h1>
+      <nav>
+        <button class="tab-button active" data-target="filmes">Filmes</button>
+        <button class="tab-button" data-target="series">Séries</button>
+        <button class="tab-button" data-target="games">Games</button>
+        <button class="tab-button" data-target="read">Read</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="filmes" class="tab-content active">
+        <h2>Filmes</h2>
+        <div class="table-grid">
+          <article class="table-card">
+            <h3>Assistir</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Duna: Parte Dois</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Oppenheimer</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Interestelar</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Blade Runner 2049</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>A Chegada</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="1"></td>
+                </tr>
+                <tr>
+                  <td>Nope</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Noites Brancas</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Clube da Luta</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="table-card">
+            <h3>Reassistir</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Matrix</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>O Senhor dos Anéis</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Inception</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>O Cavaleiro das Trevas</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Parasita</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="1"></td>
+                </tr>
+                <tr>
+                  <td>Whiplash</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>O Grande Truque</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Gravidade</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </section>
+
+      <section id="series" class="tab-content">
+        <h2>Séries</h2>
+        <div class="table-grid">
+          <article class="table-card">
+            <h3>Assistir</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Severance</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Dark</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Succession</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Westworld</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>The Bear</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="1"></td>
+                </tr>
+                <tr>
+                  <td>Foundation</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Arcane</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Andor</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="table-card">
+            <h3>Reassistir</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Breaking Bad</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Better Call Saul</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Mad Men</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Lost</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Fringe</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="1"></td>
+                </tr>
+                <tr>
+                  <td>The Office</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Community</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Mr. Robot</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </section>
+
+      <section id="games" class="tab-content">
+        <h2>Games</h2>
+        <div class="table-grid grid-three">
+          <article class="table-card">
+            <h3>Backlog</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hollow Knight</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Elden Ring</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Persona 5</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Death Stranding</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Disco Elysium</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="1"></td>
+                </tr>
+                <tr>
+                  <td>God of War Ragnarök</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="table-card">
+            <h3>Jogando</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cyberpunk 2077</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Sea of Stars</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Hades II</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Baldur's Gate 3</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Dead Cells</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="1"></td>
+                </tr>
+                <tr>
+                  <td>Slay the Spire</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="table-card">
+            <h3>Rejogar</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>The Witcher 3</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Mass Effect 2</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Dark Souls</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Portal 2</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Celeste</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="1"></td>
+                </tr>
+                <tr>
+                  <td>Journey</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </section>
+
+      <section id="read" class="tab-content">
+        <h2>Read</h2>
+        <div class="table-grid grid-three">
+          <article class="table-card">
+            <h3>Lista de Leitura</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Neuromancer</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Fundação</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Duna</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Snow Crash</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+                <tr>
+                  <td>Kindred</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="1"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="table-card">
+            <h3>Lendo</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>O Problema dos Três Corpos</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>A Longa Viagem a um Pequeno Planeta Hostil</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>Leviatã Desperta</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Kindle Collection</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="table-card">
+            <h3>Reler</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Status</th>
+                  <th>Prioridade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1984</td>
+                  <td><button class="status-button complete" aria-label="Marcar como incompleto"></button></td>
+                  <td class="stars" data-stars="5"></td>
+                </tr>
+                <tr>
+                  <td>Admirável Mundo Novo</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="4"></td>
+                </tr>
+                <tr>
+                  <td>Fundação e Império</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="3"></td>
+                </tr>
+                <tr>
+                  <td>O Nome do Vento</td>
+                  <td><button class="status-button" aria-label="Marcar como completo"></button></td>
+                  <td class="stars" data-stars="2"></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
